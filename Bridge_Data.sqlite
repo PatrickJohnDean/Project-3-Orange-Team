@@ -5,7 +5,7 @@
 -- Dumped from database version 16.2
 -- Dumped by pg_dump version 16.2
 
--- Started on 2024-04-20 21:33:39 EDT
+-- Started on 2024-04-21 21:39:36 EDT
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -18,35 +18,8 @@ SET xmloption = content;
 SET client_min_messages = warning;
 SET row_security = off;
 
-SET default_tablespace = '';
-
-SET default_table_access_method = heap;
-
 --
--- TOC entry 215 (class 1259 OID 17397)
--- Name: bridges; Type: TABLE; Schema: public; Owner: postgres
---
-
-CREATE TABLE public.bridges (
-    bridge_id integer NOT NULL,
-    latitude double precision NOT NULL,
-    longitude double precision NOT NULL,
-    year_built integer NOT NULL,
-    bridge_condtion character varying NOT NULL,
-    average_daily_traffic integer NOT NULL,
-    deck_width double precision NOT NULL,
-    structure_length double precision NOT NULL,
-    sqft double precision NOT NULL,
-    repair_cost_est character varying NOT NULL,
-    replacemnet_cost_est character varying NOT NULL,
-    address character varying NOT NULL
-);
-
-
-ALTER TABLE public.bridges OWNER TO postgres;
-
---
--- TOC entry 3584 (class 0 OID 17397)
+-- TOC entry 3589 (class 0 OID 17403)
 -- Dependencies: 215
 -- Data for Name: bridges; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -213,7 +186,53 @@ COPY public.bridges (bridge_id, latitude, longitude, year_built, bridge_condtion
 \.
 
 
--- Completed on 2024-04-20 21:33:39 EDT
+--
+-- TOC entry 3590 (class 0 OID 17409)
+-- Dependencies: 216
+-- Data for Name: traffic_volume; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.traffic_volume (bridge_id, latitude, longitude, bridge_condtion, average_daily_traffic) FROM stdin;
+466580	39.963467	-75.186778	Poor	27042
+466581	39.963861	-75.185025	Poor	27042
+466638	40.005244	-75.131928	Poor	14600
+466641	39.993506	-75.128647	Poor	3200
+466642	40.018283	-75.1359	Poor	1500
+466643	40.014492	-75.178256	Poor	10000
+466648	40.01605	-75.175225	Poor	13600
+466658	40.012064	-75.194331	Poor	1000
+466663	40.012808	-75.117725	Poor	21000
+466676	39.954	-75.183597	Poor	8500
+466677	40.007742	-75.197811	Poor	18650
+466680	40.060161	-75.210142	Poor	3100
+466681	40.020811	-75.103328	Poor	50
+466683	40.031056	-75.111125	Poor	11000
+466685	40.003489	-75.114022	Poor	6000
+466686	39.995961	-75.156214	Poor	6000
+466688	39.922869	-75.219564	Poor	20000
+466691	39.982597	-75.238697	Poor	7910
+466704	39.993903	-75.163719	Poor	0
+466705	40.090203	-75.069367	Poor	10700
+466707	39.919033	-75.239531	Poor	10200
+466710	40.055408	-75.217822	Poor	100
+466712	39.916975	-75.2425	Poor	2000
+466725	39.983519	-75.257639	Poor	800
+466730	39.938267	-75.208967	Poor	5000
+466739	40.076092	-75.054808	Poor	10000
+466743	39.940086	-75.239883	Poor	6800
+466747	40.079247	-75.225467	Poor	12200
+466757	39.996403	-75.196339	Poor	3000
+466770	40.114836	-75.00535	Poor	20000
+466772	39.909217	-75.229206	Poor	9700
+466773	40.079322	-75.083025	Poor	8300
+466774	39.925106	-75.241186	Poor	2000
+466781	39.964756	-75.184547	Poor	25095
+466793	40.015131	-75.150767	Poor	900
+472287	39.960194	-75.159694	Poor	150
+\.
+
+
+-- Completed on 2024-04-21 21:39:36 EDT
 
 --
 -- PostgreSQL database dump complete

@@ -12,3 +12,11 @@ CREATE TABLE bridges (
 	replacemnet_cost_est VARCHAR NOT NULL,
 	address VARCHAR NOT NULL
 );
+
+CREATE TABLE traffic_volume (
+    bridge_id INT NOT NULL,
+    latitude FLOAT NOT NULL,
+    longitude FLOAT NOT NULL,
+    bridge_condtion VARCHAR NOT NULL,
+    average_daily_traffic INT NOT NULL
+);
