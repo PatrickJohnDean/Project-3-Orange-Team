@@ -1,4 +1,4 @@
-Bridge_ID,Latitude,Longitude,Year_Built,Bridge_Condition,Average_Daily_Traffic,Deck_Width,Structure_Length,SqFt,Repair_Cost_Est,Replacement_Cost_Est,Address
+Bridge_ID,Latitude,Longitude,Year_Built,Bridge_Condition,Average Daily_Traffic,Deck_Width,Structure_Length,SqFt,Repair_Cost_Est,Replacement_Cost_Est,Address
 452997,40.10345,-74.961092,1990,Good,9729,13.0,18.3,237.9,"$50,796.41","$74,700.60","Dunksferry Road, Mechanicsville, 19020"
 466574,40.017092,-75.211428,1928,Fair,14596,19.2,32.9,631.68,"$134,876.31","$198,347.52","Ridge Avenue, Wissahickon, 19127"
 466580,39.963467,-75.186778,1964,Poor,27042,16.1,167.0,2688.7000000000003,"$574,091.22","$844,251.80","Spring Garden Street, Mantua, 19104"
