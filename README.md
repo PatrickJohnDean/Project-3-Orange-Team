@@ -1,6 +1,4 @@
 # Project-3-Orange-Team
-Repository for the Orange Team's Project 3 submission
-
 PROJECT INTRODUCTION:
 
 The Bipartisan Infrastructure Law (aka The Infrastructure Investment and Jobs Act) is a historic investment of $1.2 trillion to improve the United States' infrastructure. Approximately $110 billion has been appropriated to the improvement for roads and bridges. Specifically, the BIL creates $40 billion of new funding for bridge repair, replacement, or rehabilitation.  As noted in the White House Fact Sheet, this "is the single largest dedicated bridge investment since the construction of the interstate highway system".   Our country has 45,000 bridges that are considered in poor condition that present safety, climate, and economic issues if not addressed.  States and cities are preparing infrastructure needs assessments to prioritize projects to submit grant proposals to receive funding.
@@ -39,13 +37,17 @@ The data supports the recommendation to repair the bridges rather than replacing
 
 INSTRUCTIONS FOR USING AND INTERACTING WITH THE PROJECT:
 
-The initial NTAD dataset was filtered to reflect the state of PA, city of Philadelphia, City Maintained Bridges which resulted in a total of 158 bridges. We filtered the data further to only include the Latitude, Longitude, Year Built, Bridge Condition, Average Daily Traffic, Deck Width, Structure Length columns for these 158 bridges and created the SqFt column by multiplying the Deck Width by the Structure Length.
+*The initial NTAD dataset is too large to house in a github repository, it can be downloaded here: https://geodata.bts.gov/datasets/national-bridge-inventory/about *
+
+After importing the full National Bridge Inventory csv we filtered it to reflect the state of PA, city of Philadelphia, City Maintained Bridges which resulted in a total of 158 bridges. We filtered the data further to only include the Latitude, Longitude, Year Built, Bridge Condition, Average Daily Traffic, Deck Width, Structure Length columns for these 158 bridges and created the SqFt column by multiplying the Deck Width by the Structure Length.
 
 We then used the FHWA’s replacement cost estimate (of $314 per square foot) and repair cost estimate (68% of their replacement cost estimate, $213.52) multiplied by the square footage of each bridge to create the Est Repair Cost and Est Replacement Cost columns.
 
 The NTAD dataset provided the latitude and longitude of each bridge. However, we wanted to get the actual address for each bridge to add to our pop-up marker.  This was successfully completed by using two Python libraries, Geopy and Geocoder, to reverse geolocate the address of each bridge.
 
-Once the task of cleaning the data was completed, we used the Folium Python library to create the interactive visualization.  Markers were created for each bridge maintained by Philadelphia as follows:
+Once the task of cleaning the data was completed, we used it to create a  Mongo Database and extracted the data from there to create our visualizations. We also kept a copy of the cleaned csv (cleaned_bridge_data.csv) in the repository for others to import if desired.
+
+With our cleaned data we used the Folium Python library to create the interactive visualization.  Markers were created for each bridge maintained by Philadelphia as follows:
 
 Green markers = 'Good' bridges
 Orange markers = 'Fair' bridges
@@ -106,3 +108,4 @@ https://www.whitehouse.gov/wp-content/uploads/2022/05/BUILDING-A-BETTER-AMERICA-
 https://www.whitehouse.gov/build/guidebook/
 https://commons.wikimedia.org/wiki/File:Infrastructure_Investment_and_Jobs_Act_Summary.png#/media/File:Infrastructure_Investment_and_Jobs_Act_Summary.png
 https://nypost.com/wp-content/uploads/sites/2/2022/01/GettyImages-1238039300-1.jpg?quality=90&strip=all&w=1756
+![image](https://github.com/PatrickJohnDean/Project-3-Orange-Team/assets/154106237/e9e82796-1635-45e1-bbca-47c735f037b8)
