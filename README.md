@@ -45,7 +45,7 @@ We then used the FHWA’s replacement cost estimate (of $314 per square foot) an
 
 The NTAD dataset provided the latitude and longitude of each bridge. However, we wanted to get the actual address for each bridge to add to our pop-up marker.  This was successfully completed by using two Python libraries, Geopy and Geocoder, to reverse geolocate the address of each bridge.
 
-Once the task of cleaning the data was completed, we used it to create a  Mongo Database and extracted the data from there to create our visualizations. We also kept a copy of the cleaned csv (cleaned_bridge_data.csv) in the repository for others to import if desired.
+Once the task of cleaning the data was completed, we used it to create a  Mongo Database and extracted the data from there to create our visualizations. We also kept a copy of the cleaned csv (cleaned_bridge_df.csv) in the repository for others to import if desired.
 
 With our cleaned data we used the Folium Python library to create the interactive visualization.  Markers were created for each bridge maintained by Philadelphia as follows:
 
