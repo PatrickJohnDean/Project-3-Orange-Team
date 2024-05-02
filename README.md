@@ -109,3 +109,25 @@ https://www.whitehouse.gov/build/guidebook/
 https://commons.wikimedia.org/wiki/File:Infrastructure_Investment_and_Jobs_Act_Summary.png#/media/File:Infrastructure_Investment_and_Jobs_Act_Summary.png
 https://nypost.com/wp-content/uploads/sites/2/2022/01/GettyImages-1238039300-1.jpg?quality=90&strip=all&w=1756
 ![image](https://github.com/PatrickJohnDean/Project-3-Orange-Team/assets/154106237/e9e82796-1635-45e1-bbca-47c735f037b8)
+
+Technical contributions breakdown
+
+Data Cleaning
+•	Recoding the Bridge Inventory csv to filter it down to just Philadelphia maintained bridges - Chau
+•	Adding in SqFt and cost estimate columns – Patrick
+•	Reverse Geocoding – Katie and Chau
+
+Traffic Api attempts - Julius
+
+Mapping 
+•	Bridge markers - Chau
+•	Traffic volume circles - Patrick
+•	Legend - Chau
+
+Database setup and extraction – Chau, Katie
+
+Cost breakdown visualization - Katie
+
+Flask app - Julius
+
+ReadMe file - Katie
